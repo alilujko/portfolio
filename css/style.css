@@ -1,0 +1,112 @@
+:root{
+    --project_color: rgba(6, 25, 102, 0.5);
+    --body_color: #0b0d14;
+    --for_me_color: rgba(92, 102, 6, 0.5);
+    --for_my_team: rgba(102, 28, 6, 0.5);
+
+    /* Акцентні кольори для наведення (hover) */
+    --project_hover_border: rgb(18, 70, 230);
+    --project_hover_shadow: rgba(18, 70, 230, 0.35);
+
+    --for_me_hover_border: rgb(180, 200, 15);
+    --for_me_hover_shadow: rgba(180, 200, 15, 0.35);
+
+    --for_team_hover_border: rgb(220, 60, 20);
+    --for_team_hover_shadow: rgba(220, 60, 20, 0.35);
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 99.5%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--body_color);
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+    background-size: 32px 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.my{
+    display: flex;
+    /* width: 30%;
+    height: 40%; */
+    border-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.1%;
+}
+
+.my_photo{
+    width: 39%;
+    height: 95%;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    width: 66.7%;
+    height: 30%;
+    padding: 15px 0;
+    background-color: var(--project_color);    
+    color: white;
+    border-radius: 15px;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 5%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 150ms cubic-bezier(0.2, 0, 0, 1), border-color 150ms ease, box-shadow 150ms ease;
+}
+
+/* .project:hover{
+    border-color: rgb(8, 45, 192);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(8, 45, 192, 0.25);
+}
+
+.project:active{
+    transform: scale(0.97);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.project:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+} */
+
+.project-projects{
+    background-color: var(--project_color);
+}
+.project-projects:hover {
+    border-color: var(--project_hover_border);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px var(--project_hover_shadow);
+}
+
+.project-me {
+    background-color: var(--for_me_color);
+}
+.project-me:hover {
+    border-color: var(--for_me_hover_border);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px var(--for_me_hover_shadow);
+}
+
+.project-team {
+    background-color: var(--for_my_team);
+}
+.project-team:hover {
+    border-color: var(--for_team_hover_border);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px var(--for_team_hover_shadow);
+}
