@@ -13,7 +13,9 @@
 
     --for_team_hover_border: rgb(220, 60, 20);
     --for_team_hover_shadow: rgba(220, 60, 20, 0.35);
-
+    --help: rgba(20, 90, 60, 0.5);
+    --help_hover_border: rgb(30, 200, 130);
+    --help_hover_shadow: rgba(30, 200, 130, 0.35);
 }
 
 body{
@@ -55,7 +57,7 @@ body{
     display: flex;
     align-items: center;
     width: 66.7%;
-    height: 30%;
+    height: 25%;
     padding: 15px 0;
     background-color: var(--project_color);    
     color: white;
@@ -112,4 +114,13 @@ body{
     border-color: var(--for_team_hover_border);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px var(--for_team_hover_shadow);
+}
+
+.project-help {
+    background-color: var(--help);
+}
+.project-help:hover {
+    border-color: var(--help_hover_border);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px var(--help_hover_shadow);
 }
