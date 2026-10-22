@@ -1,5 +1,5 @@
 document.querySelector(".project-projects").addEventListener("click", () => {
-    window.location.href = "http://127.0.0.1:5501/my_projects.html";
+    window.location.href = "my_projects.html";
 });
 
 document.querySelector(".project-me").addEventListener("click", () => {
